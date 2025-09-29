@@ -1,6 +1,6 @@
 # CPU-Draw - Android 原生 CPU 渲染
 
-Android 原生 C++ CPU 渲染
+**Android 原生 C++ CPU 渲染**
 
 ## 说明
 
@@ -45,29 +45,17 @@ Android 原生 C++ CPU 渲染
   * 可拖拽悬浮窗菜单
   * 组件：Button、Checkbox、Label、Separator
 
-## 项目结构
-###
-project/
-├── include/              # 头文件
-│   ├── core/            # 核心工具
-│   ├── graphics/        # 图形渲染
-│   ├── text/            # 文本渲染
-│   ├── input/           # 触摸输入
-│   ├── ui/              # UI 系统
-│   └── platform/        
-├── src/                 # 源文件
-│   ├── graphics/
-│   ├── text/
-│   ├── input/
-│   ├── ui/
-│   └── main.cpp
-├── third_party/         # 第三方库（stb_truetype）
-├── CMakeLists.txt       # CMake 配置
-└── build.sh            # 构建脚本
+## 性能特点
+
+* **纯 CPU 渲染：无需 GPU, 零 OpenGL/Vulkan 依赖**
+
+## 注意事项
+
+* **性能有限：CPU 渲染性能远低于 GPU**
 
 ## 环境要求
 
-* Android NDK r21 或更高版本
+* **Android NDK r21 或更高版本**
 * **Root 权限**
 
 ## 快速开始
@@ -116,13 +104,3 @@ dl.AddRectRoundedFilled(100, 100, 300, 200, 10, Graphics::rgba(100, 150, 255, 20
 
 // 绘制文本
 dl.AddText(150, 250, "Hello World", 32, Graphics::rgba(255, 255, 255, 255));
-
-
-
-## 性能特点
-
-* **纯 CPU 渲染：无需 GPU, 零 OpenGL/Vulkan 依赖**
-
-## 注意事项
-
-* **性能有限：CPU 渲染性能远低于 GPU**
