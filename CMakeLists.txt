@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.21.0)
 
-set(NDK_PATH 填写你的NDK路径)
+set(NDK_PATH 填写你的NDK路径) # 自己填
 set(CMAKE_SYSTEM_NAME ANDROID)
 set(CMAKE_BUILD_TYPE Release)
 set(CMAKE_SYSTEM_VERSION 30)
