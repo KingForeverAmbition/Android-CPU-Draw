@@ -14,7 +14,7 @@ print_warning() { echo -e "${YELLOW}[WARN]${NC} $1"; }
 
 PROJECT_NAME="CPUDrawDemo" # 文件名称
 BUILD_DIR="build"
-NDK_PATH="" # NDK路径
+NDK_PATH="" # NDK路径，自己填
 
 # 检查 NDK
 if [ ! -d "$NDK_PATH" ]; then
