@@ -1,8 +1,9 @@
-# CPU-Draw - Android 原生 CPU 渲染
+# CPU-Draw
 
-**Android 原生 C++ CPU 渲染**
+**Android Native CPU Render**
 
 ## 说明
+* **改进**：与上一个项目不同的是自定义图形而非转换ImGui
 
 * **特点**: 
   * ✅ **CPU 渲染**：纯 CPU 渲染 [不依赖 OpenGL/Vulkan]
