@@ -46,6 +46,7 @@ Android 原生 C++ CPU 渲染
   * 组件：Button、Checkbox、Label、Separator
 
 ## 项目结构
+###
 project/
 ├── include/              # 头文件
 │   ├── core/            # 核心工具
@@ -76,16 +77,16 @@ project/
 chmod +x build.sh
 ./build.sh
 
-### 部署
+部署
 bashadb push build/bin/CPUDrawDemo /data/local/tmp/
 adb shell chmod +x /data/local/tmp/CPUDrawDemo
 adb shell /data/local/tmp/CPUDrawDemo
 
-### 清理
+清理
 bash./build.sh clean
 
 
-### 使用示例
+使用示例
 创建悬浮窗菜单
 cpp#include "ui/FloatingMenu.h"
 
@@ -116,11 +117,12 @@ dl.AddRectRoundedFilled(100, 100, 300, 200, 10, Graphics::rgba(100, 150, 255, 20
 // 绘制文本
 dl.AddText(150, 250, "Hello World", 32, Graphics::rgba(255, 255, 255, 255));
 
+
+
 ## 性能特点
 
-纯 CPU 渲染：无需 GPU, 零 OpenGL/Vulkan 依赖
-
+* **纯 CPU 渲染：无需 GPU, 零 OpenGL/Vulkan 依赖**
 
 ## 注意事项
 
-性能有限：CPU 渲染性能远低于 GPU
+* **性能有限：CPU 渲染性能远低于 GPU**
